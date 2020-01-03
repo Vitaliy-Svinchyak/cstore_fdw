@@ -34,7 +34,9 @@ endif
 #
 
 PG_CONFIG = pg_config
+$(info    PG_CONFIG is $(PG_CONFIG))
 PGXS := $(shell $(PG_CONFIG) --pgxs)
+$(info    PGXS is $(PGXS))
 include $(PGXS)
 
 ifndef MAJORVERSION

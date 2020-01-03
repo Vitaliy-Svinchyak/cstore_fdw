@@ -43,6 +43,7 @@ ifndef MAJORVERSION
     MAJORVERSION := $(basename $(VERSION))
 endif
 
+$(info    VERSION is $(VERSION))
 $(info    MAJORVERSION is $(MAJORVERSION))
 
 ifeq (,$(findstring $(MAJORVERSION), 9.3 9.4 9.5 9.6 10 11))
